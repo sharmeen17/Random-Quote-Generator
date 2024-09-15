@@ -21,6 +21,11 @@ const quotes = [
     }
 ];
 
+// localStorage.setItem("quotes", JSON.stringify(quotes));
+
+
+// localStorage.getItem("quotes")
+
 
 function generateQuote() {
     var quoteDisplay = document.getElementById("quote");
@@ -29,4 +34,19 @@ function generateQuote() {
 
     // Display the selected quote and author
     quoteDisplay.innerText = `"${selectedQuote.quote}" - ${selectedQuote.author}`;
+}
+
+
+function addQuote(){
+    var addQuote = document.getElementById("quoteInput").value;
+    var addAuthor = document.getElementById("authorInput").value;
+
+    // var quoteObject= `"${addQuote.quote}" - ${addAuthor.author}`;
+    // console.log(quoteObject);
+    // quotes.push(quoteObject);
+
+  
+    quotes.push({ quote: addQuote, author: addAuthor });
+
+  console.log(quotes);
 }

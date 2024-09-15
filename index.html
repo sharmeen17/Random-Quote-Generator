@@ -11,9 +11,9 @@
 <body>
     <!-- <img src="hand-drawn-abstract-floral-background_23-2150744306.avif" alt="floral background" class="bgImage"> -->
     <div class="mainBox">
-        <div class="card">
+        <div class="bannerBox">
             <div class="banner">
-                <img src="Quote Generator.png" height="162" width="auto" class="img">
+                <img src="/assets/Quote Generator.png" height="162" width="auto" class="img">
             </div>
         </div>
         <div class="description">
@@ -23,13 +23,42 @@
             </p>
         </div>
         <div class="quote-box">
-            <b><p id="quote">Click the button to generate a quote</p></b>
+            <b>
+                <p id="quote">Click the button to generate a quote</p>
+            </b>
         </div>
         <div>
-            <button id="generateButton"   class="generate" onclick="generateQuote()">
+            <button id="generateButton" class="generate" onclick="generateQuote()">
                 Generate
             </button>
         </div>
+
+        <div class="quoteAddBox">
+            <p>
+                Add quote
+            </p>
+        </div>
+
+        <div class="quoteInput">
+            <input placeholder="Enter Quote" class="placeholder" id="quoteInput">
+            <input placeholder="Enter Author" class="placeholder" id="authorInput">
+        </div>
+
+        <button class="button" onclick="addQuote()">
+            Add
+        </button>
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
     <script src="script.js"></script>
